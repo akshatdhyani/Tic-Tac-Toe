@@ -52,10 +52,9 @@ def checkforwin():
        button7['text'] == "X" and button8['text'] == "X" and button9['text'] == "X" or
        button1['text'] == "X" and button5['text'] == "X" and button9['text'] == "X" or
        button3['text'] == "X" and button5['text'] == "X" and button7['text'] == "X" or
-       button1['text'] == "X" and button2['text'] == "X" and button3['text'] == "X" or
-       button1['text'] == "X" and button2['text'] == "X" and button3['text'] == "X" or
+       button1['text'] == "X" and button4['text'] == "X" and button7['text'] == "X" or
        button2['text'] == "X" and button5['text'] == "X" and button8['text'] == "X" or
-       button7['text'] == "X" and button6['text'] == "X" and button9['text'] == "X" ):
+       button3['text'] == "X" and button6['text'] == "X" and button9['text'] == "X" ):
         disableButton()
         tkinter.messagebox.showinfo("Tic Tac Toe", playerA)
 
@@ -67,12 +66,13 @@ def checkforwin():
        button7['text'] == "O" and button8['text'] == "O" and button9['text'] == "O" or
        button1['text'] == "O" and button5['text'] == "O" and button9['text'] == "O" or
        button3['text'] == "O" and button5['text'] == "O" and button7['text'] == "O" or
-       button1['text'] == "O" and button2['text'] == "O" and button3['text'] == "O" or
-       button1['text'] == "O" and button2['text'] == "O" and button3['text'] == "O" or
+       button1['text'] == "O" and button4['text'] == "O" and button7['text'] == "O" or
        button2['text'] == "O" and button5['text'] == "O" and button8['text'] == "O" or
-       button7['text'] == "O" and button6['text'] == "O" and button9['text'] == "O" ):
+       button3['text'] == "O" and button6['text'] == "O" and button9['text'] == "O" ):
         disableButton()
         tkinter.messagebox.showinfo("Tic Tac Toe", playerB)
+
+    
 
 buttons = StringVar()
 label = Label(tk, text = "Player 1 : ", font = "Times 20 bold", bg = "white", fg = 'black', height = 1, width = 8)
